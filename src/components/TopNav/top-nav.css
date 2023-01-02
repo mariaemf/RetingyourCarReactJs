@@ -1,0 +1,38 @@
+.top__nav {
+  position: fixed;
+  /*indica que o elemento tera um valor fixo em relacao ao viewport*/
+  top: 0;
+  /*indica espaço acima do elemento*/
+  left: calc(260px + 10px);
+  z-index: 999;
+  /* especifica a ordem de pilha de um elemento do anúncio*/
+  background: var(--primary-color);
+  width: 100%;
+  /*determina a largura da área de conteúdo de um elemento*/
+  height: 70px;
+  /*define altura dos boxes*/
+  line-height: 70px;
+  /*controla espacamento entre as linhas de um texto*/
+
+}
+
+.top__nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  width: calc(100% - 17%);
+}
+
+.search__box,
+.top__nav-right {
+  width: 50%;
+}
+
+
+.top__nav-right {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  justify-content: flex-end;
+}

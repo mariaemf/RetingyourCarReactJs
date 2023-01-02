@@ -1,0 +1,104 @@
+.sidebar {
+  width: 260px;
+  /*determona largura da área de conteúdo*/
+  height: 100%;
+  /*define a altura dos boxes*/
+  position: fixed;
+  /*indica que o elemento tera um valor fixo em relação ao vh*/
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /*especifica a ordem de pilha de um elemento do anúncio*/
+  background: var(--primary-color);
+  padding: 0px 30px;
+}
+
+.sidebar__top {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+}
+
+.sidebar__top h2 {
+  display: flex;
+  /* se torna uma flex container ai podemos manipular os filhos desse flex com propriedades novas*/
+  align-items: center;
+  /*para alinhar itens ao centro*/
+  column-gap: 0.5rem;
+  /*para indicar qual e o espaco entre linhas e colunas*/
+  color: var(--heading-color);
+}
+
+.sidebar__top h2 span i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary-color);
+  border-radius: 50%;
+
+}
+
+.sidebar__top h2 i {
+  font-weight: 400 !important;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.sidebar__content {
+  display: flex;
+
+  justify-content: space-between;
+  /* O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles; */
+  flex-direction: column;
+  /*permite alterar a direcao na qual os elementos flex serao exibidos ao longo do eixo principal*/
+  height: calc(100% - 5%);
+  margin-top: 50px;
+}
+
+.menu {
+  height: 80%;
+}
+
+.sidebar__bottom {
+  height: 20%;
+}
+
+.nav__link,
+.sidebar__bottom span {
+  display: flex;
+  align-items: center;
+  /*para alinhar itens ao centro*/
+  column-gap: 5px;
+  /*indica espaço entre as linhas e colunas*/
+  cursor: pointer;
+}
+
+.sidebar__bottom span {
+  color: var(--small-text-color);
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  /*para o elemento se tornar um flex container*/
+
+  row-gap: 1.3rem;
+  /*para indicar espaço entre linhas */
+  flex-direction: column;
+  /*permite alterar a direcao na qual os elementos flex serao exibidos ao longo do eixo principal*/
+  color: var(--small-text-color);
+}
+
+.nav__link i {
+  color: var(--secondary-color);
+}
+
+.nav__active {
+  color: #fff;
+  background: #b7ffe913;
+  padding: 6px;
+  /*define distancia entre o conteúdo de um elemento e suas bordas*/
+  border-radius: 5px;
+}

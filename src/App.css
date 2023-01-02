@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #181b3a;
-  --secondary-colo: #01d293;
+  --secondary-color: #01d293;
   --bordy-bg: #0b0c28;
   --card-01-bg: linear-gradient(#ef621c, #e1424e);
   --card-02-bg: linear-gradient(#01d293, #56c57a);
@@ -31,4 +31,9 @@ ul {
 a {
   text-decoration: none;
   color: unset;
+}
+
+.main__layout {
+  margin-left: 270px;
+  /*espaçamento para o lado esquerdo*/
 }

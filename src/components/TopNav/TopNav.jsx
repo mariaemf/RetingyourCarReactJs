@@ -16,6 +16,7 @@ const TopNav = () => {
         <div className="top__nav-right">
           <span className="notification">
             <i class="ri-notification-3-line"></i>
+            <span className="badge">1</span>
           </span>
           <div className="profile">
             <Link to="./settings">

@@ -7,7 +7,7 @@
   z-index: 999;
   /* especifica a ordem de pilha de um elemento do anúncio*/
   background: var(--primary-color);
-  width: 100%;
+  width: calc(100% - 260px);
   /*determina a largura da área de conteúdo de um elemento*/
   height: 70px;
   /*define altura dos boxes*/
@@ -21,18 +21,92 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 30px;
-  width: calc(100% - 17%);
 }
 
-.search__box,
-.top__nav-right {
-  width: 50%;
-}
+
 
 
 .top__nav-right {
   display: flex;
   align-items: center;
-  column-gap: 1rem;
+  column-gap: 2rem;
   justify-content: flex-end;
+  /*para alinhar ao fim da sessão*/
+}
+
+.search__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*serve para alinhar os elementos ao eixo principal */
+  padding: 0px 10px;
+  background: #0b0c28 !important;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.search__box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  /*propriedade abreviada para configurar uma ou mais das propriedades de contorno outline-style , outline-width  e outline-color  em uma única declaração*/
+  color: var(--small-text-color);
+}
+
+.search__box input::placeholder {
+  color: var(--small-text-color);
+}
+
+.search__box span i {
+  color: var(--small-text-color);
+}
+
+.profile img {
+  width: 40px;
+  /*determina largura da area dde conteudo de um elemento*/
+  height: 40px;
+  /*define a altura dos boxes*/
+  border-radius: 50%;
+  /*arredondamento da borda*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /*para ficar alinhado ao final do boxes*/
+  object-fit: cover;
+  /*usada para especificar como um objeto (img, video, iframe etc) deve se redimensiobada para se ajustar ao cotainer*/
+}
+
+.notification i {
+  color: var(--small-text-color);
+  font-size: 1.2rem;
+  /*para regular o tamanho da fonte (c px, em, rem, %*/
+  cursor: pointer;
+}
+
+.notification {
+  position: relative;
+  /*para posicionar a pg de acordo com as indicacoes que forem definidas*/
+}
+
+.badge {
+  position: absolute;
+  /*Com ele você pode posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static*/
+  top: 25%;
+  right: -10%;
+  /* para definir posição do elemento em relacao a sua borda a DIREITA*/
+  width: 13px;
+  /* determina largua da área do conteúdo*/
+  height: 13px;
+  /*defie a altura dos boxes*/
+  display: flex;
+  /*transforma um elemento em flex container para manipularmos os elementos filhos desse flex*/
+  align-items: center;
+  /*para alinhar itens aos centros*/
+  justify-content: center;
+  /* alinha elementos ao longo do eixo principal*/
+  background: var(--secondary-color);
+  border-radius: 50%;
+  color: white;
+  font-size: .8rem;
 }

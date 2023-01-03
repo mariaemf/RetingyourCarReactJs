@@ -1,0 +1,102 @@
+.dashboard {
+  margin-top: 100px;
+  /*distância da margin entre o topo*/
+  padding: 0px 30px;
+}
+
+.single__card {
+
+  padding: 20px;
+  /*define distancia entre o conteudo de um elemento e as suas bordas*/
+  display: flex;
+  /*torna elemento flex assim podendo manipular os mesmos*/
+  align-items: center;
+  /*para alinhar os itens ao centro*/
+  justify-content: space-between;
+  /*O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles*/
+  border-radius: 5px;
+}
+
+.single__card:nth-child(1) {
+  /*seleciona elementos com base em suas posições em um grupo de elementos irmãos*/
+  background: var(--card-01-bg);
+}
+
+.single__card:nth-child(2) {
+  /*seleciona elementos com base em suas posições em um grupo de elementos irmãos*/
+  background: var(--card-02-bg);
+}
+
+.single__card:nth-child(3) {
+  /*seleciona elementos com base em suas posições em um grupo de elementos irmãos*/
+  background: var(--card-03-bg);
+}
+
+.single__card:nth-child(4) {
+  /*seleciona elementos com base em suas posições em um grupo de elementos irmãos*/
+  background: var(--card-04-bg);
+}
+
+.card__content h4 {
+  color: var(--heading-color);
+  font-size: 1.4rem;
+  /*para aumenar o tamanho da fonte*/
+  font-weight: 400;
+  /*para defirnir 'força' da letra*/
+}
+
+.card__content span {
+  color: var(--heading-color);
+  font-size: 2rem;
+}
+
+.card__icon {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgba(225, 225, 225, .845);
+}
+
+.dashboard__cards {
+  display: grid;
+  /*propriedade de posicionamento em elementos -- Por padrão um grid container coloca cada item em uma linha e todos eles ficam em uma coluna*/
+  grid-template-columns: repeat(4, 1fr);
+  /* precisamos indicar quantas linhas e quantas colunas nossa grade terá.*/
+  column-gap: 2rem;
+  /*indica qual e o espaço entre linhas e colunas */
+
+}
+
+.statics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  /*indica espaço entre linhas e colunas*/
+  margin-top: 2rem;
+  /*distancia do topo*/
+}
+
+.stats {
+  background: var(--primary-color);
+  padding: 30px;
+  /*define uma distancia ente o conteúdo de um elemento e suas bordas*/
+  border-radius: 5px;
+  height: 320px;
+  /*define a altura do boxe*/
+  padding-bottom: 50px;
+  /*define espaçamento interno inferior*/
+}
+
+.tooltip__style {
+  background: var(--bordy-bg) !important;
+  color: #fff;
+}
+
+.stats__title {
+  color: #fff;
+  font-size: 1.2rem;
+  /*tamanho da letra-fonte*/
+  font-weight: 500;
+  /*força da fonte*/
+  margin-bottom: 20px;
+  /*define a margin na area inferior ao elemento*/
+}

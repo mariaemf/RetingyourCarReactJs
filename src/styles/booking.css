@@ -1,0 +1,32 @@
+.bookings {
+  margin-top: 100px;
+  /*dist da magin entre o topo*/
+  padding-bottom: 50px;
+  /*define as dimensoes do espaçamento INFERIOR*/
+  padding: 0px 30px;
+}
+
+.booking__title {
+  font-size: 1.4rem;
+  /*tamanho da fonte*/
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.filter__widget-wrapper {
+  display: flex;
+  /*para deixar os itens flexiveis*/
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.filter__widget-01 select,
+.filter__widget-02 select {
+  border: none;
+  /*para tirar borda*/
+  padding: 7px 10px;
+  border-radius: 50px;
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}

@@ -17,6 +17,7 @@
   justify-content: space-between;
   /*O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles*/
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .single__card:nth-child(1) {
@@ -115,6 +116,7 @@
   padding: 20px;
   /*defiine uma distância entre oc onteúdo de um elemento e suas bordas*/
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .recommend__car-card:nth-child(1) {

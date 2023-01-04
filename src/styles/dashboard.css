@@ -100,3 +100,19 @@
   margin-bottom: 20px;
   /*define a margin na area inferior ao elemento*/
 }
+
+.recommend__car-card {
+  padding: 20px;
+  /*defiine uma distância entre oc onteúdo de um elemento e suas bordas*/
+  border-radius: 5px;
+  background: var(--recommend-car01-bg);
+}
+
+.recommend__car-top h5 {
+  display: flex;
+  /*para deixar os itens flexiveis*/
+  align-items: center;
+  /*para alinhar os itens ao centro*/
+  column-gap: 1rem;
+
+}

@@ -2,6 +2,8 @@
   margin-top: 100px;
   /*distância da margin entre o topo*/
   padding: 0px 30px;
+  padding-bottom: 50px;
+  /*define as dimenções de espaçamento interno inferior*/
 }
 
 .single__card {
@@ -101,11 +103,30 @@
   /*define a margin na area inferior ao elemento*/
 }
 
+.recommend__cars-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  column-gap: 2rem;
+
+}
+
 .recommend__car-card {
   padding: 20px;
   /*defiine uma distância entre oc onteúdo de um elemento e suas bordas*/
   border-radius: 5px;
+}
+
+.recommend__car-card:nth-child(1) {
   background: var(--recommend-car01-bg);
+}
+
+.recommend__car-card:nth-child(2) {
+  background: var(--recommend-car02-bg);
+}
+
+.recommend__car-card:nth-child(3) {
+  background: var(--recommend-car03-bg);
 }
 
 .recommend__car-top h5 {
@@ -114,5 +135,42 @@
   align-items: center;
   /*para alinhar os itens ao centro*/
   column-gap: 1rem;
+  /*para indicar espaço entre linhas e colunas*/
+  color: var(--bordy-bg);
+  margin-bottom: 10px;
+  /*define margin na area INFERIOR do elemento*/
+}
 
+.recommend__car-top h5 span i {
+  font-size: 1.2rem;
+  /*para definir tam da fonte*/
+
+}
+
+.recommend__car-bottom {
+  font-size: 1.3rem;
+  margin: 10px 0px;
+  /*definindo espaçamento entre as margens do topo e inferior*/
+}
+
+.recommend__car-other {
+  display: flex;
+  /*para deixar os itens flexiveis e conseguir modificar o local*/
+  align-items: center;
+  /*para alinhar itens ao centro*/
+  justify-content: space-between;
+  /*para alinhar um item ao começo e outro ao fim da tela*/
+}
+
+.recommend__icons {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  /*para indicar qual e o espaço entre linhas e colunas*/
+}
+
+.recommend__icons p:nth-child(1) {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
 }

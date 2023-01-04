@@ -1,4 +1,5 @@
 import React from "react";
+import CarStatsChart from "../charts/CarStatsChart";
 import MileChart from "../charts/MileChart";
 import SingleCard from "../components/reuseable/SingleCard";
 import "../styles/dashboard.css";
@@ -40,8 +41,13 @@ const Dashboard = () => {
 
         <div className="statics">
           <div className="stats">
-            <h3 className="stats__title">Miles Statics</h3>
+            <h3 className="stats__title">Miles Statistics</h3>
             <MileChart />
+          </div>
+
+          <div className="stats">
+            <h3 className="stats__title">Car Statistics</h3>
+            <CarStatsChart />
           </div>
         </div>
       </div>

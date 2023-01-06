@@ -1,7 +1,7 @@
 import React from "react";
 import Router from "../../routes/Router";
 import Sidebar from "../Sidebar/Sidebar";
-import TopNav from "../TopNav/TopNav";
+import TopNav from "../UI/TopNav/TopNav";
 
 const Layout = () => {
   return (

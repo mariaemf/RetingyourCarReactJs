@@ -4,32 +4,27 @@ import {
   Line,
   LineChart,
   ResponsiveContainer,
+  Tooltip,
   XAxis,
-  YAxis,
 } from "recharts";
 import trackingData from "../assets/dummy-data/trackingData";
 
 const TrackingChart = () => {
   return (
     <ResponsiveContainer width="100%">
-      <LineChart
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
+      <LineChart>
         <CartesianGrid strokeDasharray="0" stroke="#b7ffe913" />
-        <XAxis dataKey="name" fill="#ddd" />
-        <YAxis dataKey="mt" fill="#ddd" />
+        <XAxis dataKey="name" stroke="#ddd" />
 
         <Line
           type="monotone"
           dataKey="km"
           data={trackingData}
           stroke="#e1424e"
+          strokeWidth={2}
+          activeDot={{ r: 8 }}
         />
+        <Tooltip wrapperClassName="tootip__style" />
       </LineChart>
     </ResponsiveContainer>
   );

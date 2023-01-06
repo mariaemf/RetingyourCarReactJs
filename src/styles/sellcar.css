@@ -42,3 +42,60 @@
   font-weight: 400;
   margin-bottom: 30px;
 }
+
+.sell__car-title {
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.offer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.offer__item {
+  padding: 20px;
+  border-radius: 5px;
+  background: var(--primary-color);
+}
+
+.box__01,
+.cliente__name {
+  font-size: 1.2rem;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.avg__price {
+  color: #ef621c;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.avg__price span {
+  color: #ddd;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.market__price {
+  color: #ddd;
+  font-size: .8rem;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.arrow__key {
+  width: 30px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ef621c;
+  color: #fff;
+}

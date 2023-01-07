@@ -1,9 +1,12 @@
 import React from "react";
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import sellcar from "../assets/images/sell-car.png";
 import TrackingChart from "../charts/TrackingChart";
 import "../styles/sellcar.css";
 
 const SellCar = () => {
+  const percentage = 55;
+
   return (
     <div className="sell__car">
       <div className="sell__car-wrapper">
@@ -37,16 +40,29 @@ const SellCar = () => {
             <div className="offer__item">
               <div className="box__01">
                 <h3 className="client__name">Killian James</h3>
+
+                <h6 className="avg__price">
+                  $16,605 <span>average price</span>
+                </h6>
+
+                <h6 className="market__price">Market average is $16,244</h6>
+                <span className="arrow__key">
+                  <i class="ri-arrow-right-line"></i>
+                </span>
               </div>
 
-              <h6 className="avg__price">
-                $16,605 <span>average price</span>
-              </h6>
-
-              <h6 className="market__price">Market average is $16,244</h6>
-              <span className="arrow__key">
-                <i class="ri-arrow-right-line"></i>
-              </span>
+              <div className="box__02">
+                <CircularProgressbar
+                  value={percentage}
+                  text={`${percentage}`}
+                  styles={buildStyles({
+                    pathColor: `rgba(62, 152, 199, ${percentage / 100})`,
+                    textColor: "#fff",
+                    trailColor: "#d6d6d6",
+                    backgroundColor: "#01d293",
+                  })}
+                />
+              </div>
             </div>
           </div>
         </div>

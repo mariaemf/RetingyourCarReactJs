@@ -51,17 +51,44 @@ const SellCar = () => {
                 </span>
               </div>
 
-              <div className="box__02">
-                <CircularProgressbar
-                  value={percentage}
-                  text={`${percentage}`}
-                  styles={buildStyles({
-                    pathColor: `rgba(62, 152, 199, ${percentage / 100})`,
-                    textColor: "#fff",
-                    trailColor: "#d6d6d6",
-                    backgroundColor: "#01d293",
-                  })}
-                />
+              <div className="circle__wrapper">
+                <div className="box__02">
+                  <CircularProgressbar
+                    value={percentage}
+                    text={`${percentage}%`}
+                    styles={buildStyles({
+                      pathColor: "#01d293",
+                      textColor: "#fff",
+                      trailColor: "#0b0c28",
+                      textSize: "18px",
+                    })}
+                  />
+                </div>
+                <h4>Impression Share</h4>
+              </div>
+
+              <div className="box__03">
+                <span className="model__spend-icon">
+                  <i class="ri-car-line"></i>
+                </span>
+                <h6 className="spend__amount">$1174</h6>
+                <p className="spend__title">Model Spend</p>
+              </div>
+
+              <div className="box__04">
+                <span className="model__spend-icon">
+                  <i class="ri-share-forward-line"></i>
+                </span>
+                <h6 className="spend__amount">$1174</h6>
+                <p className="spend__title">Model Spend</p>
+              </div>
+
+              <div className="box__05">
+                <span className="model__spend-icon">
+                  <i class="ri-money-dollar-circle-line"></i>
+                </span>
+                <h6 className="spend__amount">$811</h6>
+                <p className="spend__title">Spend Per Unit Turned</p>
               </div>
             </div>
           </div>

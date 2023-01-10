@@ -3,7 +3,7 @@
   /*indica que o elemento tera um valor fixo em relacao ao viewport*/
   top: 0;
   /*indica espaço acima do elemento*/
-  left: calc(260px + 10px);
+  left: 260px;
   z-index: 999;
   /* especifica a ordem de pilha de um elemento do anúncio*/
   background: var(--primary-color);

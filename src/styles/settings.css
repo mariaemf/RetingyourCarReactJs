@@ -1,0 +1,130 @@
+.settings {
+  margin-top: 100px;
+  /*margins entre o topo*/
+  padding: 0px 30px;
+  /*define distancia entgre o conteudo e suas bordas*/
+  padding-bottom: 50px;
+  /*distancia entre o espaçamento inferior */
+}
+
+.settings__wrapper {
+  padding: 20px;
+  border-radius: 5px;
+  background: var(--primary-color);
+}
+
+.settings__title {
+  color: var(--heading-color);
+  font-weight: 500;
+  /*"peso" da fonte*/
+  margin-bottom: 2rem;
+  /*tamanho de margin na parte inferior*/
+}
+
+.settings__top {
+  display: flex;
+  /*para deixar os itens flexiveis*/
+  align-items: center;
+  /*para centralizar itens ao centro*/
+  column-gap: 2.7rem;
+  /*distancia entre colunas*/
+  margin-bottom: 1.5rem;
+}
+
+.setting__btn {
+  border: none;
+  /*significa que nenhuma linha será desenhada ao redor do elemento.*/
+  padding: 7px 25px;
+  background: transparent;
+  border-radius: 5px;
+  color: var(--heading-color);
+  font-size: 1rem;
+  /*tamanho da fonte*/
+  cursor: pointer;
+}
+
+.active__btn {
+  background: #b7ffe913;
+}
+
+.profile__title {
+  color: var(--heading-color);
+  font-weight: 500;
+  /*'força' da fonte*/
+  margin-bottom: 5px;
+
+}
+
+.profile__desc {
+  color: var(--small-text-color);
+  margin-bottom: 2rem;
+  /*margin da parte inferior*/
+}
+
+label {
+  color: var(--heading-color);
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.form__group div {
+  display: flex;
+  /*deixar o container flexivel*/
+  flex-direction: column;
+  width: 47%;
+}
+
+.form__group {
+  display: flex;
+  align-items: center;
+  /*alinhar o conteudo ao centro*/
+  justify-content: space-between;
+  /*para deixar um icone no inicio e outro no final*/
+  column-gap: 2rem;
+  /*distanciamento entre colunas*/
+  margin-bottom: 2rem;
+}
+
+.form__group div input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #b7ffe913;
+  color: var(--heading-color);
+}
+
+.form__group div input::placeholder {
+  color: var(--small-text-color);
+  font-size: .9rem;
+}
+
+.form__group div input:focus {
+  outline: none;
+  /*remove o comportamento padrao do browser de adicionar borda ao elemento quando o mesmo é selecionado*/
+}
+
+.profile__img-desc {
+  color: var(--small-text-color);
+  margin-bottom: 10px;
+}
+
+.profile__img-btns {
+  display: flex;
+  flex-direction: row !important;
+  column-gap: 2.7rem;
+}
+
+.dlt__btn,
+.update__btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ddd;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.update__btn {
+  color: var(--secondary-color);
+}

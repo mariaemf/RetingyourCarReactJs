@@ -54,7 +54,7 @@
   flex-direction: column;
   /*permite alterar a direcao na qual os elementos flex serao exibidos ao longo do eixo principal*/
   height: calc(100% - 5%);
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .menu {
@@ -84,7 +84,7 @@
   display: flex;
   /*para o elemento se tornar um flex container*/
 
-  row-gap: 1.3rem;
+  row-gap: 2rem;
   /*para indicar espaço entre linhas */
   flex-direction: column;
   /*permite alterar a direcao na qual os elementos flex serao exibidos ao longo do eixo principal*/
